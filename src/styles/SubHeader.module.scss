@@ -1,0 +1,20 @@
+@use './mixins' as mix;
+@use './variables' as *;
+@use './global' as *;
+
+
+.subHeader {
+  padding-top: 200px;
+  text-align: center;
+  background: $grayWhiteColor;
+
+  &__title {
+    font-size: 360px;
+    background: $heroTextColor;
+    color: transparent;
+    background-clip: text;
+    font-family: italic;
+    text-align: center;
+  }
+}
+

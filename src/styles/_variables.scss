@@ -3,8 +3,10 @@
 $grayBlackColor: #212121;
 $grayWhiteColor: #C4C4C4;
 $heroTextColor: #E5E5E5;
-$buttonWhite: #FFFFFF;
+$basicWhite: #FFFFFF;
+$basicBlack: #000000;
 $textColor: #353535;
+
 
 // RADIUS
 $radius-xs: 2px;
@@ -14,3 +16,9 @@ $radius-lg: 12px;
 $radius-xl: 16px;
 $radius-2xl: 24px;
 $radius-rounded: 50%;
+
+
+// BREAKPOINTS
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;

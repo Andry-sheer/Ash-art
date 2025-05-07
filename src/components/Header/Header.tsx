@@ -1,13 +1,19 @@
 import { NavLink } from "react-router-dom";
 import styles from "../../styles/Header.module.scss";
 import Logo from "../../assets/icons/Logo.svg";
+import Button from "../Button/Button";
+import { Search } from "lucide-react";
+
 
 const Header = () => {
+
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
-          <img className={styles.header__logoImg} src={Logo} alt="logo" />
+          <NavLink to="/home">
+            <img className={styles.header__logoImg} src={Logo} alt="logo" />
+          </NavLink>
         </div>
 
         <ul className={styles.header__list}>
@@ -41,7 +47,11 @@ const Header = () => {
         </ul>
 
         <div className={styles.header__buttonsHeader}>
-          <button className={styles.header__btnSearch}>search</button>
+          <Button 
+            className={styles.header__btnSearch}
+            type="button"
+            icon={<Search size={13} />}
+            />
           <button className={styles.header__btnLogin}>Login</button>
         </div>
       </div>

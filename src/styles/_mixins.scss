@@ -1,4 +1,6 @@
 
+@use '../styles/variables' as *;
+
 // flex-center
 @mixin flexCenter {
   display: flex;
@@ -29,4 +31,29 @@
 
 @mixin activeLink {
   text-shadow: 0 0 15px gold;
+}
+
+
+@mixin viewport-md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin viewport-lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin viewport-xl {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin viewport-xxl {
+  @media (min-width: $breakpoint-xxl) {
+    @content;
+  }
 }

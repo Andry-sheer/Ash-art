@@ -1,0 +1,22 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+
+.container {
+  // from 0 for 1920+
+  padding: 0 30px;
+
+  @include viewport-md {
+    // max-width: 648px;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @include viewport-lg {
+    max-width: 964px;
+  }
+
+  @include viewport-xl {
+    max-width: 1500px;
+  }
+}

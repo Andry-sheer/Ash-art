@@ -1,7 +1,8 @@
-@use './variables' as vars;
-@use './mixins' as mix;
 @use './fonts';
 @use './reset';
+@use './variables' as vars;
+@use './mixins' as mix;
+@use './global';
 
 
 .App {
