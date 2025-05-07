@@ -1,0 +1,12 @@
+@use './variables' as vars;
+@use './mixins' as mix;
+@use './fonts';
+@use './reset';
+
+
+.App {
+  font-family: 'Inter';
+  font-weight: 400;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}

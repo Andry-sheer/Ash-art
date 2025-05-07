@@ -1,0 +1,67 @@
+@use './variables' as vars;
+@use './mixins' as mix;
+
+.header {
+  background: vars.$grayBlackColor;
+  color: vars.$buttonWhite;
+
+		&__container {
+      @include mix.flexBetween;
+      max-width: 1440px;
+      padding: 30px;
+      margin: 0 auto;
+		}
+
+		&__logo {
+      width: 50px;
+      height: 50px;
+		}
+
+		&__logoImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+		}
+
+		&__list {
+      display: flex;
+      align-items: center;
+		}
+
+		&__listItem {
+      padding: 10px 26px;
+		}
+
+    &__link {
+      @include mix.link;
+      color: vars.$buttonWhite;
+      line-height: 160%;
+
+      &:hover {
+        color: rgb(132, 109, 51);
+        text-shadow: 0 0 15px gold;
+      }
+    }
+
+    &__linkActive {
+      color: rgb(132, 109, 51);
+      @include mix.activeLink;
+    }
+
+		&__buttonsHeader {
+      @include mix.flexCenter;
+      gap: 1.3rem;
+		}
+
+		&__btnSearch {
+		}
+
+		&__btnLogin {
+      @include mix.button;
+      border-radius: vars.$radius-sm;
+      padding: 10px 25px;
+      color: vars.$grayBlackColor;
+      background: vars.$buttonWhite;
+      font-size: 14px;
+		}
+}
