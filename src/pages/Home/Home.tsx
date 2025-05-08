@@ -1,11 +1,9 @@
 import SubHeader from "../../components/SubHeader/SubHeader"
 
-const Home = () => {
+export const Home = () => {
   return (
     <>
       <SubHeader />
     </>
   )
 }
-
-export default Home

@@ -6,7 +6,7 @@ const SubHeader = () => {
     <>
     <div className={styles.subHeader}>
       <div className={styles.container}>
-        <h1 className={styles.subHeader__title}>LASER</h1>
+        <h1 className={styles.title}>LASER</h1>
       </div>
     </div>
     

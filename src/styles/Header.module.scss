@@ -1,72 +1,78 @@
-@use "./variables" as *;
-@use "./mixins" as mix;
-
 .header {
-   background: $grayBlackColor;
-   color: $basicWhite;
+   background: #212121;
+   color: white;
+}
 
-   &__container {
-      @include mix.flexBetween;
-      max-width: 1440px;
-      padding: 30px;
-      margin: 0 auto;
-   }
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1440px;
+   padding: 30px;
+   margin: 0 auto;
+}
 
-   &__logo {
-      width: 50px;
-      height: 50px;
-   }
+.logo {
+   width: 50px;
+   height: 50px;
+}
 
-   &__logoImg {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-   }
+.logoImg {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
 
-   &__list {
-      display: flex;
-      align-items: center;
-   }
+.list {
+   display: flex;
+   align-items: center;
+}
 
-   &__listItem {
-      padding: 10px 26px;
-   }
+.listItem {
+   padding: 10px 26px;
+}
 
-   &__link {
-      @include mix.link;
-      color: $basicWhite;
-      line-height: 160%;
+.link {
+   text-decoration: none;
+   color: white;
+   line-height: 160%;
+   transition: 0.3s linear;
 
-      &:hover {
-         color: rgb(132, 109, 51);
-         text-shadow: 0 0 15px gold;
-      }
-   }
-
-   &__linkActive {
+   &:hover {
       color: rgb(132, 109, 51);
-      @include mix.activeLink;
+      text-shadow: 0 0 15px gold;
    }
+}
 
-   &__buttonsHeader {
-      @include mix.flexCenter;
-      gap: 1.3rem;
-   }
+.linkActive {
+   color: rgb(132, 109, 51);
+   text-shadow: 0 0 15px gold;
+}
 
-   &__btnSearch {
-      @include mix.flexCenter;
-      @include mix.button;
-      border-radius: $radius-rounded;
-      padding: 12px;
-      background: $basicWhite;
-   }
+.buttonsHeader {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1.3rem;
+}
 
-   &__btnLogin {
-      @include mix.button;
-      border-radius: $radius-sm;
-      padding: 10px 25px;
-      color: $grayBlackColor;
-      background: $basicWhite;
-      font-size: 14px;
-   }
+.btnSearch {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: none;
+   border-radius: 50%;
+   padding: 12px;
+   background: white;
+   cursor: pointer;
+}
+
+.btnLogin {
+   border: none;
+   border-radius: 12px;
+   padding: 10px 25px;
+   color: #212121;
+   background: white;
+   font-size: 14px;
+   cursor: pointer;
 }

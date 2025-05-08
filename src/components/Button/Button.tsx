@@ -9,7 +9,7 @@ type propsButton = {
   onClick?: () => void
 }
 
-const Button = ({ type="button", text, className, icon, disable, onClick }: propsButton ) => {
+export const Button = ({ type="button", text, className, icon, disable, onClick }: propsButton ) => {
   return (
     <button 
       className={className}
@@ -21,5 +21,3 @@ const Button = ({ type="button", text, className, icon, disable, onClick }: prop
     </button>
   )
 }
-
-export default Button
