@@ -1,0 +1,29 @@
+
+.error {
+  background: #c4c4c4;
+}
+
+.container {
+  min-height: 100vh;
+  max-height: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.warning {
+  width: 80px;
+  height: 80px;
+  fill: #212121;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #212121;
+  text-transform: uppercase;
+}

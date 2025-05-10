@@ -4,6 +4,7 @@ import { Input } from '../Input/Input'
 import { IconComponent } from '../IconComponent/IconComponent'
 import { FaFacebookSquare, FaGooglePlusG, FaInstagram, FaTelegramPlane, FaViber, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import styles from '../../styles/Footer.module.scss'
+import { NavLink } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -72,12 +73,39 @@ export const Footer = () => {
           </div>
         </div>
 
+        <div className={styles.rightSide}>
+          <div className={styles.rightContainer}>
+            <h4 className={styles.rightTitle}>Catalog</h4>
+            <ul className={styles.rightList}>
+              <li>
+                <NavLink className={({isActive})=> isActive ? `${styles.rightListItem} ${styles.rightListItemActive}` : styles.rightListItem} to='features'>Features</NavLink>
+              </li>
+              /
+              <li>
+                <NavLink className={({isActive})=> isActive ? `${styles.rightListItem} ${styles.rightListItemActive}` : styles.rightListItem} to='/service'>Service</NavLink>
+              </li>
+              /
+              <li>
+                <NavLink className={({isActive})=> isActive ? `${styles.rightListItem} ${styles.rightListItemActive}` : styles.rightListItem} to='/pricing-plans'>Pricing & Plans</NavLink>
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.rightLocationContainer}>
+            <h4 className={styles.rightLocation}>Location</h4>
+            <p className={styles.rightLocationAddress}>61240, Kharkiv, Horizont 8/1 Office</p>
+
+            <h4 className={styles.rightLanguageItem}>Language</h4>
+              <ul className={styles.rightLanguageList}>
+                <li>En</li>
+                <li>Ua</li>
+                <li>Ru</li>
+              </ul>
+          </div>
 
 
 
-
-
-        <div className={styles.rightSide}></div>
+        </div>
       </div>
     </footer>
   )
