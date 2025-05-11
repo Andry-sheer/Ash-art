@@ -1,14 +1,22 @@
 
 .subHeader {
-  padding-top: 200px;
   background: #c4c4c4;
+  padding-bottom: 30px;
 }
 
-.title {
+.title, .paragraph {
   text-align: center;
-  font-size: 360px;
+  font-size: 150px;
   background: white;
   color: transparent;
   background-clip: text;
   font-family: italic;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 100px;
+  color: #212121;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
