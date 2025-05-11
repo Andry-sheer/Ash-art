@@ -93,7 +93,7 @@ export const Footer = () => {
 
           <div className={styles.rightLocationContainer}>
             <h4 className={styles.rightLocation}>Location</h4>
-            <p className={styles.rightLocationAddress}>61240, Kharkiv, Horizont 8/1 Office</p>
+            <p className={styles.rightLocationAddress}>+100500, Kharkiv, Office</p>
 
             <h4 className={styles.rightLanguageItem}>Language</h4>
               <ul className={styles.rightLanguageList}>
