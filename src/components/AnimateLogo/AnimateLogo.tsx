@@ -6,10 +6,8 @@ export const AnimateLogo = () => {
   return (
     <div className={styles.logoContainer}>
       <div className={styles.line}></div>
-      <div className={styles.starContainer}>
-        <div className={styles.star}>
-          <IconComponent className={styles.icon} icon={GiBeveledStar} />
-        </div>
+      <div className={styles.star}>
+        <IconComponent className={styles.icon} icon={GiBeveledStar} />
       </div>
     </div>
   )

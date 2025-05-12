@@ -1,15 +1,11 @@
 import styles from '../../styles/SubHeader.module.scss'
-import { AnimateLogo } from '../AnimateLogo/AnimateLogo'
 
-
-const SubHeader = () => {
+export const SubHeader = () => {
   return (
     <div className={styles.subHeader}>
-      <p className={styles.paragraph}>Art & Ash</p>
-        <AnimateLogo />
+      <h2 className={styles.subTitle}>Art & Ash</h2>
       <h1 className={styles.title}>Laser engraving</h1>
+      <h3 className={styles.solution}>Engineering solutions...</h3>
     </div>
   )
 }
-
-export default SubHeader
