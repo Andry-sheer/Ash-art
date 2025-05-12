@@ -3,6 +3,11 @@ import { SubHeader } from "../../components/SubHeader/SubHeader";
 import imgTech from "../../assets/images/13391.jpg";
 import styles from "../../styles/Home.module.scss";
 
+import img1 from '../../assets/images/i.jpg'
+import img2 from '../../assets/images/35106236_8271541.jpg'
+import img3 from '../../assets/images/1159700_ORFF3X0.jpg'
+import img4 from '../../assets/images/3886394_11386.jpg'
+
 export const Home = () => {
   return (
     <div className={styles.home}>
@@ -30,7 +35,7 @@ export const Home = () => {
                 cupiditate unde numquam minus nostrum non, accusantium enim dolor
                 vel blanditiis, nemo veritatis voluptas tempora eligendi nam.
                 Dolorum voluptatibus sint iste exercitationem consequuntur dolorem
-                facere voluptas, eligendi ratione!{" "}
+                facere voluptas, eligendi ratione!
               </p>
             </div>
 
@@ -42,6 +47,21 @@ export const Home = () => {
           <div className={styles.wrapperSlider}>
             <h3 className={styles.galleryTitle}>Gallery</h3>
             <span className={styles.gallerySpan}></span>
+
+            <div className={styles.catalog}>
+                <div className={styles.wrapCatalogImg}>
+                  <img className={styles.catalogImg} src={img1} alt="imgWork1" />
+                </div>
+                <div className={styles.wrapCatalogImg}>
+                  <img className={styles.catalogImg} src={img2} alt="imgWork2" />
+                </div>
+                <div className={styles.wrapCatalogImg}>
+                  <img className={styles.catalogImg} src={img3} alt="imgWork3" />
+                </div>
+                <div className={styles.wrapCatalogImg}>
+                  <img className={styles.catalogImg} src={img4} alt="imgWork4" />
+                </div>
+            </div>
           </div>
         </div>
     </div>
